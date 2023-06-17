@@ -1,0 +1,102 @@
+{
+	"replacerules.rules": {
+		"Versionnav": {
+			"find": "{{Version nav",
+			"replace": "{{Версия навигация"
+		},
+		"title": {
+			"find": "title=",
+			"replace": "название="
+		},
+		"name": {
+			"find": "name=",
+			"replace": "имя="
+		},
+		"edition": {
+			"find": "edition=",
+			"replace": "издание="
+		},
+		"image": {
+			"find": "image=",
+			"replace": "изображение="
+		},
+		"image2": {
+			"find": "image2=",
+			"replace": "изображение2="
+		},
+		"image3": {
+			"find": "image3=",
+			"replace": "изображение3="
+		},
+		"date": {
+			"find": "date=",
+			"replace": "дата выпуска="
+		},
+		"jsonhash": {
+			"find": "jsonhash=",
+			"replace": "jsonхеш="
+		},
+		"clienthash": {
+			"find": "clienthash=",
+			"replace": "клиентхеш="
+		},
+		"clientmap": {
+			"find": "clientmap=",
+			"replace": "клиенткарта="
+		},
+		"serverhash": {
+			"find": "serverhash=",
+			"replace": "серверхеш="
+		},
+		"servermap": {
+			"find": "servermap=",
+			"replace": "серверкарта="
+		},
+		"prevparent": {
+			"find": "prevparent=",
+			"replace": "предверсия="
+		},
+		"prev": {
+			"find": "prev=",
+			"replace": "пред="
+		},
+		"next": {
+			"find": "next=",
+			"replace": "след="
+		},
+		"nextparent": {
+			"find": "nextparent=",
+			"replace": "следверсия="
+		},
+	},
+	"replacerules.rulesets": {
+		"Шаблон: Версия навигация": {
+			"rules": [
+				"Versionnav",
+				"title",
+				"name",
+				"edition",
+				"image",
+				"image2",
+				"image3",
+				"date",
+				"jsonhash",
+				"clienthash",
+				"clientmap",
+				"serverhash",
+				"servermap",
+				"prevparent",
+				"prev",
+				"next",
+				"nextparent"
+			]
+		}
+	},
+	"spellright.language": [
+		"en",
+		"ru"
+	],
+	"spellright.documentTypes": [
+		"mediawiki"
+	],
+}
