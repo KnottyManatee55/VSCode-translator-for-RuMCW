@@ -68,6 +68,62 @@
 			"find": "nextparent=",
 			"replace": "следверсия="
 		},
+		"parent": {
+			"find": "parent=",
+			"replace": "предсборка для="
+		},
+		"type": {
+			"find": "type=",
+			"replace": "тип="
+		},
+		"Release candidate": {
+			"find": "=Release candidate",
+			"replace": "=Кандидат на релиз"
+		},
+		"rc1": {
+			"find": "-rc1.jpg",
+			"replace": " Release Candidate 1.jpg"
+		},
+		"rc2": {
+			"find": "-rc2.jpg",
+			"replace": " Release Candidate 2.jpg"
+		},
+		"rc3": {
+			"find": "-rc3.jpg",
+			"replace": " Release Candidate 3.jpg"
+		},
+		"pre1": {
+			"find": "-pre1.jpg",
+			"replace": " Pre-release 1.jpg"
+		},
+		"pre2": {
+			"find": "-pre2.jpg",
+			"replace": " Pre-release 2.jpg"
+		},
+		"pre3": {
+			"find": "-pre3.jpg",
+			"replace": " Pre-release 3.jpg"
+		},
+		"pre4": {
+			"find": "-pre4.jpg",
+			"replace": " Pre-release 4.jpg"
+		},
+		"pre5": {
+			"find": "-pre5.jpg",
+			"replace": " Pre-release 5.jpg"
+		},
+		"pre6": {
+			"find": "-pre6.jpg",
+			"replace": " Pre-release 6.jpg"
+		},
+		"pre7": {
+			"find": "-pre7.jpg",
+			"replace": " Pre-release 7.jpg"
+		},
+		"Pre-release": {
+			"find": "=Pre-release",
+			"replace": "=Пре-релиз"
+		},
 	},
 	"replacerules.rulesets": {
 		"Шаблон: Версия навигация": {
@@ -88,7 +144,21 @@
 				"prevparent",
 				"prev",
 				"next",
-				"nextparent"
+				"nextparent",
+				"parent",
+				"type",
+				"Release candidate",
+				"rc1",
+				"rc2",
+				"rc3",
+				"pre1",
+				"pre2",
+				"pre3",
+				"pre4",
+				"pre5",
+				"pre6",
+				"pre7",
+				"Pre-release",
 			]
 		}
 	},
