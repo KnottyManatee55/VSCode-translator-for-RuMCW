@@ -124,6 +124,90 @@
 			"find": "=Pre-release",
 			"replace": "=Пре-релиз"
 		},
+		"body0": {
+			"find": "= Changes =",
+			"replace": "= Изменения ="
+		},
+		"body1": {
+			"find": "= Gameplay =",
+			"replace": "= Игровой процесс ="
+		},
+		"body2": {
+			"find": "= General =",
+			"replace": "= Основное ="
+		},
+		"body3": {
+			"find": "= Fixes =",
+			"replace": "= Исправления ="
+		},
+		"body4": {
+			"find": "= Video =",
+			"replace": "= Видео ="
+		},
+		"body5": {
+			"find": "{{yt",
+			"replace": "{{ytl"
+		},
+		"body6": {
+			"find": "= References =",
+			"replace": "= Примечания ="
+		},
+		"body7": {
+			"find": "{{Reflist}}",
+			"replace": "{{Примечания}}"
+		},
+		"body8": {
+			"find": "= Notes =",
+			"replace": "= Заметки ="
+		},
+		"body9": {
+			"find": "Video made by",
+			"replace": "Видео, созданное"
+		},
+		"body10": {
+			"find": "{{Java Edition versions",
+			"replace": "{{Версии Java Edition"
+		},
+		"body11": {
+			"find": "known as",
+			"replace": "также известный как"
+		},
+		"body12": {
+			"find": "in the launcher",
+			"replace": "в [[лаунчер]]е"
+		},
+		"fixes0": {
+			"find": "old",
+			"replace": "старый"
+		},
+		"fixes1": {
+			"find": "dev",
+			"replace": "сним"
+		},
+		"fixes2": {
+			"find": "previous",
+			"replace": "пред"
+		},
+		"fixes3": {
+			"find": "prev",
+			"replace": "пред"
+		},
+		"fixes4": {
+			"find": "hotfix",
+			"replace": "гфикс"
+		},
+		"fixes5": {
+			"find": "private/priv",
+			"replace": "част"
+		},
+		"fixes6": {
+			"find": "fixedin=",
+			"replace": "исправленов="
+		},
+		"fixes7": {
+			"find": "{{fixes",
+			"replace": "{{Исправления"
+		},
 	},
 	"replacerules.rulesets": {
 		"Шаблон: Версия навигация": {
@@ -159,8 +243,37 @@
 				"pre6",
 				"pre7",
 				"Pre-release",
+			],
+		},
+		"BodyReplace": {
+			"rules": [
+					"body0",
+					"body1",
+					"body2",
+					"body3",
+					"body4",
+					"body5",
+					"body6",
+					"body7",
+					"body8",
+					"body9",
+					"body10",
+					"body11",
+					"body12",
 			]
-		}
+		},
+		"Шаблон:Исправления": {
+			"rules": [
+					"fixes0",
+					"fixes1",
+					"fixes2",
+					"fixes3",
+					"fixes4",
+					"fixes5",
+					"fixes6",
+					"fixes7",
+			]
+		},
 	},
 	"spellright.language": [
 		"en",
