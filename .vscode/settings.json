@@ -176,6 +176,14 @@
 			"find": "in the launcher",
 			"replace": "в [[лаунчер]]е"
 		},
+		"body13": {
+			"find": "= Blocks =",
+			"replace": "= Блоки ="
+		},
+		"body14": {
+			"find": "= Command format =",
+			"replace": "= Формат команд ="
+		},
 		"fixes0": {
 			"find": "old",
 			"replace": "старый"
@@ -260,6 +268,8 @@
 					"body10",
 					"body11",
 					"body12",
+					"body13",
+					"body14",
 			]
 		},
 		"Шаблон:Исправления": {
