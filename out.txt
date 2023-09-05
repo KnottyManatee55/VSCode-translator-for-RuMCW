@@ -1,0 +1,12 @@
+		"sprite3": {
+			"find": 'A Very Fine Item'
+			"replace": 'Очень хороший предмет'"
+		},
+		"sprite4": {
+			"find": '???'
+			"replace": 'Неизвестный элемент'"
+		},
+		"sprite5": {
+			"find": 'Acacia Boat'
+			"replace": 'Акациевая лодка'"
+		},

@@ -1,126 +1,130 @@
 {
 	"replacerules.rules": {
-		"Versionnav": {
+		"versionnav0": {
 			"find": "{{Version nav",
 			"replace": "{{Версия навигация"
 		},
-		"title": {
+		"versionnav1": {
 			"find": "title=",
 			"replace": "название="
 		},
-		"name": {
+		"versionnav2": {
 			"find": "name=",
 			"replace": "имя="
 		},
-		"edition": {
+		"versionnav3": {
 			"find": "edition=",
 			"replace": "издание="
 		},
-		"image": {
+		"versionnav4": {
 			"find": "image=",
 			"replace": "изображение="
 		},
-		"image2": {
+		"versionnav5": {
 			"find": "image2=",
 			"replace": "изображение2="
 		},
-		"image3": {
+		"versionnav6": {
 			"find": "image3=",
 			"replace": "изображение3="
 		},
-		"date": {
+		"versionnav7": {
 			"find": "date=",
 			"replace": "дата выпуска="
 		},
-		"jsonhash": {
+		"versionnav8": {
 			"find": "jsonhash=",
 			"replace": "jsonхеш="
 		},
-		"clienthash": {
+		"versionnav9": {
 			"find": "clienthash=",
 			"replace": "клиентхеш="
 		},
-		"clientmap": {
+		"versionnav10": {
 			"find": "clientmap=",
 			"replace": "клиенткарта="
 		},
-		"serverhash": {
+		"versionnav11": {
 			"find": "serverhash=",
 			"replace": "серверхеш="
 		},
-		"servermap": {
+		"versionnav12": {
 			"find": "servermap=",
 			"replace": "серверкарта="
 		},
-		"prevparent": {
+		"versionnav13": {
 			"find": "prevparent=",
 			"replace": "предверсия="
 		},
-		"prev": {
+		"versionnav14": {
 			"find": "prev=",
 			"replace": "пред="
 		},
-		"next": {
+		"versionnav15": {
 			"find": "next=",
 			"replace": "след="
 		},
-		"nextparent": {
+		"versionnav16": {
 			"find": "nextparent=",
 			"replace": "следверсия="
 		},
-		"parent": {
+		"versionnav17": {
 			"find": "parent=",
 			"replace": "предсборка для="
 		},
-		"type": {
+		"versionnav18": {
 			"find": "type=",
 			"replace": "тип="
 		},
-		"Release candidate": {
+		"versionnav19": {
+			"find": "Snapshot",
+			"replace": "Предварительная сборка"
+		},
+		"versionnav20": {
 			"find": "=Release candidate",
 			"replace": "=Кандидат на релиз"
 		},
-		"rc1": {
+		"versionnav21": {
 			"find": "-rc1.jpg",
 			"replace": " Release Candidate 1.jpg"
 		},
-		"rc2": {
+		"versionnav22": {
 			"find": "-rc2.jpg",
 			"replace": " Release Candidate 2.jpg"
 		},
-		"rc3": {
+		"versionnav23": {
 			"find": "-rc3.jpg",
 			"replace": " Release Candidate 3.jpg"
 		},
-		"pre1": {
+		"versionnav24": {
 			"find": "-pre1.jpg",
 			"replace": " Pre-release 1.jpg"
 		},
-		"pre2": {
+		"versionnav25": {
 			"find": "-pre2.jpg",
 			"replace": " Pre-release 2.jpg"
 		},
-		"pre3": {
+		"versionnav26": {
 			"find": "-pre3.jpg",
 			"replace": " Pre-release 3.jpg"
 		},
-		"pre4": {
+		"versionnav27": {
 			"find": "-pre4.jpg",
 			"replace": " Pre-release 4.jpg"
 		},
-		"pre5": {
+		"versionnav28": {
 			"find": "-pre5.jpg",
 			"replace": " Pre-release 5.jpg"
 		},
-		"pre6": {
+		"versionnav29": {
 			"find": "-pre6.jpg",
 			"replace": " Pre-release 6.jpg"
 		},
-		"pre7": {
+		"versionnav30": {
 			"find": "-pre7.jpg",
 			"replace": " Pre-release 7.jpg"
 		},
-		"Pre-release": {
+		"versionnav31": {
 			"find": "=Pre-release",
 			"replace": "=Пре-релиз"
 		},
@@ -216,72 +220,86 @@
 			"find": "{{fixes",
 			"replace": "{{Исправления"
 		},
+		"sprite0": {
+			"find": "{ pos = ",
+			"replace": "{ ['поз'] = "
+		},
+		"sprite1": {
+			"find": ", section = ",
+			"replace": ", ['раздел'] = "
+		},
 	},
 	"replacerules.rulesets": {
 		"Шаблон: Версия навигация": {
 			"rules": [
-				"Versionnav",
-				"title",
-				"name",
-				"edition",
-				"image",
-				"image2",
-				"image3",
-				"date",
-				"jsonhash",
-				"clienthash",
-				"clientmap",
-				"serverhash",
-				"servermap",
-				"prevparent",
-				"prev",
-				"next",
-				"nextparent",
-				"parent",
-				"type",
-				"Release candidate",
-				"rc1",
-				"rc2",
-				"rc3",
-				"pre1",
-				"pre2",
-				"pre3",
-				"pre4",
-				"pre5",
-				"pre6",
-				"pre7",
-				"Pre-release",
+				"versionnav1",
+				"versionnav2",
+				"versionnav3",
+				"versionnav4",
+				"versionnav5",
+				"versionnav6",
+				"versionnav7",
+				"versionnav8",
+				"versionnav9",
+				"versionnav10",
+				"versionnav11",
+				"versionnav12",
+				"versionnav13",
+				"versionnav14",
+				"versionnav15",
+				"versionnav16",
+				"versionnav17",
+				"versionnav18",
+				"versionnav19",
+				"versionnav20",
+				"versionnav21",
+				"versionnav22",
+				"versionnav23",
+				"versionnav24",
+				"versionnav25",
+				"versionnav26",
+				"versionnav27",
+				"versionnav28",
+				"versionnav29",
+				"versionnav30",
+				"versionnav31",
 			],
 		},
-		"BodyReplace": {
+		"Тело": {
 			"rules": [
-					"body0",
-					"body1",
-					"body2",
-					"body3",
-					"body4",
-					"body5",
-					"body6",
-					"body7",
-					"body8",
-					"body9",
-					"body10",
-					"body11",
-					"body12",
-					"body13",
-					"body14",
+				"body0",
+				"body1",
+				"body2",
+				"body3",
+				"body4",
+				"body5",
+				"body6",
+				"body7",
+				"body8",
+				"body9",
+				"body10",
+				"body11",
+				"body12",
+				"body13",
+				"body14",
 			]
 		},
 		"Шаблон:Исправления": {
 			"rules": [
-					"fixes0",
-					"fixes1",
-					"fixes2",
-					"fixes3",
-					"fixes4",
-					"fixes5",
-					"fixes6",
-					"fixes7",
+				"fixes0",
+				"fixes1",
+				"fixes2",
+				"fixes3",
+				"fixes4",
+				"fixes5",
+				"fixes6",
+				"fixes7",
+			]
+		},
+		"Спрайт": {
+			"rules": [
+				"sprite0",
+				"sprite1",
 			]
 		},
 	},
