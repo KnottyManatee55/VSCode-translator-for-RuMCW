@@ -1,0 +1,118 @@
+{{Reflist}}
+{{Примечания}}
+{{Version nav
+{{Версия навигация
+{{yt
+{{ytl
+{{Java Edition versions
+{{Версии Java Edition
+{{fixes
+{{Исправления
+{{snap
+{{Снимок
+title=
+название=
+name=
+имя=
+edition=
+издание=
+image=
+изображение=
+image2=
+изображение2=
+image3=
+изображение3=
+date=
+дата выпуска=
+jsonhash=
+jsonхеш=
+clienthash=
+клиентхеш=
+clientmap=
+клиенткарта=
+serverhash=
+серверхеш=
+servermap=
+серверкарта=
+prevparent=
+предверсия=
+prev=
+пред=
+next=
+след=
+nextparent=
+следверсия=
+parent=
+предсборка для=
+type=
+тип=
+fixedin=
+исправленов=
+=Snapshot
+=Предварительная сборка
+=Release candidate
+=Кандидат на релиз
+=Pre-release
+=Пре-релиз
+-rc1.jpg
+Release Candidate 1.jpg
+-rc2.jpg
+Release Candidate 2.jpg
+-rc3.jpg
+Release Candidate 3.jpg
+-pre1.jpg
+Pre-release 1.jpg
+-pre2.jpg
+Pre-release 2.jpg
+-pre3.jpg
+Pre-release 3.jpg
+-pre4.jpg
+Pre-release 4.jpg
+-pre5.jpg
+Pre-release 5.jpg
+-pre6.jpg
+Pre-release 6.jpg
+-pre7.jpg
+Pre-release 7.jpg
+Video made by
+Видео, созданное
+known as
+также известный как
+in the launcher
+в [[лаунчер]]е
+= Changes =
+= Изменения =
+= Gameplay =
+= Игровой процесс =
+= General =
+= Основное =
+= Fixes =
+= Исправления =
+= Video =
+= Видео =
+= References =
+= Примечания =
+= Notes =
+= Заметки =
+= Blocks =
+= Блоки =
+= Command format =
+= Формат команд =
+= Additions =
+= Нововведения =
+= Items =
+= Предметы =
+= Mobs =
+= Мобы =
+|;old
+|;старый
+|;dev
+|;сним
+|;previous
+|;пред
+|;prev
+|;пред
+|;hotfix
+|;гфикс
+|;private/priv
+|;част
