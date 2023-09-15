@@ -104,6 +104,12 @@ in the launcher
 = Предметы =
 = Mobs =
 = Мобы =
+= Non-mob entities =
+= Сущности, не являющиеся мобами =
+= World generation =
+= Генерация мира =
+== Experimental changes ==
+= Экспериментальные изменения =
 |;old
 |;старый
 |;dev
@@ -116,3 +122,93 @@ in the launcher
 |;гфикс
 |;private/priv
 |;част
+[[Attribute]]s
+[[Атрибут]]ы
+[[Experiments]]
+[[Экспериментальный игровой процесс]]
+[[Tag]]s
+[[Тег]]и
+[[Barrier]]
+[[Барьер]]
+[[Chorus Flower]]
+[[Цветок хоруса]]
+[[Decorated Pot]]s
+[[Узорчатая ваза|Узорчатые вазы]]
+[[Decorated Pot]]
+[[Узорчатая ваза]]
+[[Enchanting Table]]
+[[Стол зачаровывания]]
+[[Pink Petals]]
+[[Розовые лепестки]]
+[[Sculk Sensor]]
+[[Скалк-сенсор]]
+[[Calibrated Sculk Sensor]]
+[[Откалиброванный скалк-сенсор]]
+[[Camel]]s
+[[Верблюд|Верблюды]]
+[[Camel]]
+[[Верблюд]]
+[[Turtle]]s
+[[Черепаха|Черепахи]]
+[[Turtle]]
+[[Черепаха]]
+[[Witch]]es
+[[Ведьма|Ведьмы]]
+[[Witch]]
+[[Ведьма]]
+[[Totems of undying]]
+[[Тотем бессмертия]]
+[[Smithing Table]]
+[[Кузнечный стол]]
+[[Villager]]s
+[[Деревенский житель|Деревенские жители]]
+[[Villager]]
+[[Деревенский житель]]
+[[Music Disc]]s
+[[Пластинка|Пластинки]]
+[[Music Disc]]
+[[Пластинка]]
+[[Frog]]s
+[[Лягушка|Лягушки]]
+[[Frog]]
+[[Лягушка]]
+[[Goat]]s
+[[Коза|Козы]]
+[[Goat]]
+[[Коза]]
+[[Sniffer]]s
+[[Нюхач]]и
+[[Sniffer]]
+[[Нюхач]]
+[[Function]]s
+[[Функция|Функции]]
+[[Function]]
+[[Функция]]
+[[Advancements]]
+[[Достижение (Java Edition)|Достижения]]
+[[Recipe book]]s
+[[Книга рецептов|Книги рецептов]]
+[[Recipe book]]
+[[Книга рецептов]]
+[[Chunk tick]]
+[[Такт#Такт блоков|Такт чанков]]
+[[Data pack]]
+[[Набор данных]]
+[[Debug screen]]
+[[Экран отладки]]
+[[Scoreboard]]
+[[Система счёта игровых событий]]
+[[Telemetry]]
+[[Телеметрия]]
+[[Trading]]
+[[Торговля]]
+; General
+; Основное
+; Game Events
+; Игровые события
+; Pack Metadata
+; Метаданные набора данных
+; Protocol
+; Протокол
+; Multiplayer and World Selection screens
+; Экраны многопользовательской игры и выбора мира
