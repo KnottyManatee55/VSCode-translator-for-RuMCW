@@ -1,0 +1,3 @@
+lua54 SpriteArrayBuilder.lua
+python SpriteDisassembler.py
+pause
