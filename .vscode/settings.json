@@ -1,14 +1,24 @@
 {
-  "spellright.language": ["en", "ru"],
-  "spellright.documentTypes": ["mediawiki", "plaintext"],
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true
   },
-  "spellright.parserByClass": {
-    "minecraft-lang": {
-      "parser": "plain"
-    }
-  },
-  "python.analysis.typeCheckingMode": "off"
+  "python.analysis.typeCheckingMode": "off",
+  "cSpell.language": "en,ru",
+  "cSpell.words": [
+    "slicedlime",
+    "страйдеров",
+    "перезахода",
+    "реалмс",
+    "лаунчер",
+    "minecraft",
+    "скалк",
+    "зачаровывания",
+    "чанка",
+    "Взрывоустойчивость",
+    "несъёмности",
+    "хоруса",
+    "чанков",
+    "Нюхач"
+  ]
 }
