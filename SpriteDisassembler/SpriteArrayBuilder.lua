@@ -13,9 +13,19 @@ local size = sprite['настройки']['разм']
 local idlist = sprite['IDы']
 for i, v in pairs(idlist) do
     if i ~= "Неизвестно" then
-        SpriteGridList:write('    ("' .. i .. '", "' .. v['поз'] .. '"),\n')
-        if v['en'] then
-            AliasesList:write('	["' .. i .. '"] = { name = "' .. i .. '", english = "' .. v['en'] .. '" },\n')
+        if i:find(":") then
+            SpriteGridList:write('    ("' .. i:gsub(": ", " - ") .. '", "' .. v['поз'] .. '"),\n')
+            if v['en'] then
+                AliasesList:write('	["' ..
+                    i ..
+                    '"] = { title = "' ..
+                    i .. '", name = "' .. i:gsub(": ", " - ") .. '", english = "' .. v['en'] .. '" },\n')
+            end
+        else
+            SpriteGridList:write('    ("' .. i .. '", "' .. v['поз'] .. '"),\n')
+            if v['en'] then
+                AliasesList:write('	["' .. i .. '"] = { name = "' .. i .. '", english = "' .. v['en'] .. '" },\n')
+            end
         end
     end
 end
