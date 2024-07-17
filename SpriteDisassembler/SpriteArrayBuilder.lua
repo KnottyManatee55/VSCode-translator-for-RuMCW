@@ -1,5 +1,5 @@
 local sprite = require('WikiSprite')
-local FileAliasesList = ".\\EnglishAliases.lua"
+local FileAliasesList = ".\\Aliases.lua"
 AliasesList = io.open(FileAliasesList, "w")
 AliasesList:write("return {\n")
 local FileSpriteGridList = ".\\SpriteArray.py"
