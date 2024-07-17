@@ -1,7 +1,10 @@
 local sprite = require('WikiSprite')
-local FileIDList = ".\\SpriteArray.py"
-FileiIDListWrite = io.open(FileIDList, "w")
-FileiIDListWrite:write("format=" .. sprite['настройки']['формат'] ..
+local FileAliasesList = ".\\EnglishAliases.lua"
+AliasesList = io.open(FileAliasesList, "w")
+AliasesList:write("return {\n")
+local FileSpriteGridList = ".\\SpriteArray.py"
+SpriteGridList = io.open(FileSpriteGridList, "w")
+SpriteGridList:write("format=" .. sprite['настройки']['формат'] ..
     "\nsize=" .. sprite['настройки']['разм'] ..
     '\nmodname="' .. sprite['настройки']['имя'] ..
     '"\npatterns = [\n')
@@ -10,8 +13,13 @@ local size = sprite['настройки']['разм']
 local idlist = sprite['IDы']
 for i, v in pairs(idlist) do
     if i ~= "Неизвестно" then
-        FileiIDListWrite:write('    ("' .. i .. '", "' .. v['поз'] .. '"),\n')
+        SpriteGridList:write('    ("' .. i .. '", "' .. v['поз'] .. '"),\n')
+        if v['en'] then
+            AliasesList:write('	["' .. i .. '"] = { name = "' .. i .. '", english = "' .. v['en'] .. '" },\n')
+        end
     end
 end
-FileiIDListWrite:write("]")
-FileiIDListWrite:close()
+AliasesList:write("}")
+AliasesList:close()
+SpriteGridList:write("]")
+SpriteGridList:close()
