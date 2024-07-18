@@ -20,6 +20,11 @@ for i, v in pairs(idlist) do
                     i ..
                     '"] = { title = "' ..
                     i .. '", name = "' .. i:gsub(": ", " - ") .. '", english = "' .. v['en'] .. '" },\n')
+            else
+                AliasesList:write('	["' ..
+                    i ..
+                    '"] = { title = "' ..
+                    i .. '", name = "' .. i:gsub(": ", " - ") .. '" },\n')
             end
         else
             SpriteGridList:write('    ("' .. i .. '", "' .. v['поз'] .. '"),\n')
