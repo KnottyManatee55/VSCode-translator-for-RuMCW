@@ -40,7 +40,7 @@ To specify the version and change the language, as well as the table settings, e
 
 
 After launch, a file is created with the name `<game_version>-<localization_code>.json ` containing a sortable table of the following type:
-| English-language name | English-language name | localized name |
+| Translation key | English-language name | localized name |
 | - | - | - |
 | ... | ... | ... |
 
