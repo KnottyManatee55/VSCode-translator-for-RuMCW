@@ -14,8 +14,7 @@
 | `favorites_keys` | Разрешающий список с использованием регулярных выражений |
 | `unwanted_keys` | Запрещающий список с использованием регулярных выражений |
 
-
-После запуска создаётся файл с названием `<версия_игры>-<код_локализации>.json `, содержащий сортируемую таблица следующего вида:
+После запуска создаётся файл с названием `<версия_игры>-<код_локализации>.json `, содержащий сортируемую таблицу следующего вида:
 | Ключ перевода | Англоязычное название | Русскоязычное название |
 | - | - | - |
 | ... | ... | ... |
@@ -37,7 +36,6 @@ To specify the version and change the language, as well as the table settings, e
 | `void_placeholder` | Responsible for the contents of the cell, if there is no localized name |
 | `favorites_keys` | Allow list using regular expressions |
 | `unwanted_keys` | Restricted list using regular expressions |
-
 
 After launch, a file is created with the name `<game_version>-<localization_code>.json ` containing a sortable table of the following type:
 | Translation key | English-language name | localized name |

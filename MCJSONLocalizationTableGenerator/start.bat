@@ -1,2 +1,0 @@
-python "".\BuildTable.py"
-pause
