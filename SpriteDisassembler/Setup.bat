@@ -1,2 +1,2 @@
-pip install pillow
+pip install pillow slpp
 pause

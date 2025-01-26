@@ -1,3 +1,2 @@
-lua SpriteArrayBuilder.lua
-python SpriteDisassembler.py
+python ./SpriteDisassembler.py
 pause
