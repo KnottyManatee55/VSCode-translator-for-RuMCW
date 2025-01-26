@@ -59,26 +59,30 @@ for pattern in wiki_sprite["IDы"]:
     # Исключение заглушки Неизвестно из генерации
     if pattern != "Неизвестно":
         # Определение позиции спрайта
-        xsprite = (int(wiki_sprite["IDы"][pattern]["поз"]) - 1) % item_format
-        ysprite = (int(wiki_sprite["IDы"][pattern]["поз"]) - 1) // item_format
-        x = xsprite * size
-        y = ysprite * size
+        x_sprite = (int(wiki_sprite["IDы"][pattern]["поз"]) - 1) % item_format
+        y_sprite = (int(wiki_sprite["IDы"][pattern]["поз"]) - 1) // item_format
+        x = x_sprite * size
+        y = y_sprite * size
         box = (x, y, x + size, y + size)
-        # Получение иконки з спрайта
+        # Получение иконки со спрайта
         region = im.crop(box)
-        imout = Image.new("RGBA", (size, size), (255, 0, 0, 0))
-        imout.paste(region)
+        im_out = Image.new("RGBA", (size, size), (255, 0, 0, 0))
+        im_out.paste(region)
+        # Проверка наличия плохих символов
         if ":" in pattern or "/" in pattern:
             if ":" in pattern:
                 pattern_fix = pattern.replace(":", "-")
                 img_name = "Grid " + pattern_fix + " (" + mod_name + ").png"
+                # Запись псевдонима
                 aliases_list = aliases_list + aliases_fix_proc(pattern, pattern_fix)
             if "/" in pattern:
                 pattern_fix = pattern.replace("/", "-")
                 img_name = "Grid " + pattern_fix + " (" + mod_name + ").png"
+                # Запись псевдонима
                 aliases_list = aliases_list + aliases_fix_proc(pattern, pattern_fix)
         else:
             img_name = "Grid " + pattern + " (" + mod_name + ").png"
+            # Запись псевдонима для англоязычного названия, если оно есть
             if wiki_sprite["IDы"][pattern].get("en") != None:
                 aliases_list = (
                     aliases_list
@@ -91,8 +95,10 @@ for pattern in wiki_sprite["IDы"]:
                     + wiki_sprite["IDы"][pattern]["en"]
                     + '" },\n'
                 )
-        imout.save(img_name)
-        imout = Image.open(img_name)
+        im_out.save(img_name)
+        im_out = Image.open(img_name)
+# Закрытие списка псевдонимов
 aliases_list = re.sub(",\n$", "\n}", aliases_list)
+# Сохранение псевдонимов
 with open("Aliases.lua", "w", encoding="utf-8") as file:
     file.write(aliases_list)
