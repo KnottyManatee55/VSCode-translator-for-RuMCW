@@ -54,6 +54,46 @@ def aliases_fix_proc(pattern, pattern_fix):
     return aliases_fix
 
 
+# Сжатие изображений предметов с пиксельной репликацией
+def compress_neighbor_pixels(region):
+    # Проверка на пиксельную репликацию
+    for x in range(0, size, 2):
+        for y in range(0, size, 2):
+            pixel_box = (x, y, x + 1, y + 1)
+            pixel_box2 = (x + 1, y, x + 2, y + 1)
+            pixel_box3 = (x, y + 1, x + 1, y + 2)
+            pixel_box4 = (x + 1, y + 1, x + 2, y + 2)
+            pixel_region = region.crop(pixel_box)
+            pixel_region2 = region.crop(pixel_box2)
+            pixel_region3 = region.crop(pixel_box3)
+            pixel_region4 = region.crop(pixel_box4)
+            if (
+                pixel_region.histogram() == pixel_region2.histogram()
+                and pixel_region.histogram() == pixel_region3.histogram()
+                and pixel_region.histogram() == pixel_region4.histogram()
+            ):
+                result = False
+            else:
+                result = True
+                break
+        if result:
+            break
+    # Если изображение невозможно сжать попиксельно
+    if result:
+        im_result = Image.new("RGBA", (int(size), int(size)), (255, 0, 0, 0))
+        im_result.paste(region)
+    # Если изображение можно сжать попиксельно
+    else:
+        im_result = Image.new("RGBA", (int(size / 2), int(size / 2)), (255, 0, 0, 0))
+        for x in range(int(size / 2)):
+            for y in range(int(size / 2)):
+                pixel_box = (x * 2, y * 2, x * 2 + 1, y * 2 + 1)
+                pixel_region = region.crop(pixel_box)
+                pixel_box2 = (x, y)
+                im_result.paste(pixel_region, pixel_box2)
+    return im_result
+
+
 # Перечисление спрайта
 for pattern in wiki_sprite["IDы"]:
     # Исключение заглушки Неизвестно из генерации
@@ -66,8 +106,6 @@ for pattern in wiki_sprite["IDы"]:
         box = (x, y, x + size, y + size)
         # Получение иконки со спрайта
         region = im.crop(box)
-        im_out = Image.new("RGBA", (size, size), (255, 0, 0, 0))
-        im_out.paste(region)
         # Проверка наличия плохих символов
         if ":" in pattern or "/" in pattern:
             if ":" in pattern:
@@ -95,8 +133,7 @@ for pattern in wiki_sprite["IDы"]:
                     + wiki_sprite["IDы"][pattern]["en"]
                     + '" },\n'
                 )
-        im_out.save(img_name)
-        im_out = Image.open(img_name)
+        compress_neighbor_pixels(region).save(img_name)
 # Закрытие списка псевдонимов
 aliases_list = re.sub(",\n$", "\n}", aliases_list)
 # Сохранение псевдонимов
